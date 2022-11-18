@@ -61,11 +61,7 @@ const resolvers = {
     },
 
     Mutation: {
-        /*addCar: (_:unknown, args: {brand: string, plate: string, seats?: number}): Car|undefined => {
 
-        },
-
-        deleteCar: ():*/
     },
 };
 
