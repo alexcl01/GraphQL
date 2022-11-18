@@ -1,6 +1,7 @@
 import { ApolloServer } from "npm:@apollo/server@^4.1";
 import { startStandaloneServer } from "npm:@apollo/server@^4.1/standalone";
 import { graphql } from "npm:graphql@^16.6";
+import { gql } from 'https://deno.land/x/graphql_tag@0.0.1/mod.ts';
 
 
 type Car = {
@@ -24,7 +25,7 @@ let cars: Car[] = [{
 
 // getCars siempre devuelve un array, y en ese array siempre son coches (o vacío)
 
-const typeDefs = `
+const typeDefs = gql `
     type Car {
         plate: String!
         brand: String!
